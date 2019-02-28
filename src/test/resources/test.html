@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Demo</title>
+</head>
+<body>
+
+<input id="text"></input> <br>
+
+<a id="link" href="/test/test.html">Link</a> <br>
+
+<select name="currency_code" data-size="medium">
+    <option value="">-- Select --</option>
+    <option value="USD" selected="selected" data-value="1" data-decimals="2" data-prefix="$" data-suffix="">US Dollars
+    </option>
+    <option value="EUR" data-value="0.726" data-decimals="2" data-prefix="" data-suffix=" �">Euros</option>
+</select> <br>
+
+<div id="div">
+    <p style="opacity: 0" id="invisible">Text Inside The Invisible Element</p>
+    <p style="opacity: 0.02">Almost Invisible Element</p>
+    <p>Visible Element</p>
+    <pre id="spacespre">Text            with             a              lot               of             spaces</pre>
+    <p id="spaces">Text            with             a              lot               of             spaces</p>
+</div>
+
+<p class="css" id="color">Super CSS Text</p>
+
+<style>
+    p.css
+    {
+        font-family: verdana;
+        font-size: 20px;
+        background-color: lightblue;
+        color: white;
+    }
+</style>
+
+<input id="alert" type="button" onclick="prompt('Hello World!')" value="Click Me!">
+
+</body>
+</html>

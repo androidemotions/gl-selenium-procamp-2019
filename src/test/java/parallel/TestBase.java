@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
@@ -40,10 +41,10 @@ public class TestBase {
                 }));
     }
 
-//    public String getTestURL() {
-//        ClassLoader classLoader = getClass().getClassLoader();
-//        File file = new File(classLoader.getResource("test.html").getFile());
-//        return file.getAbsolutePath().toString();
-//    }
+    public String getTestURL() {
+        ClassLoader classLoader = getClass().getClassLoader();
+        File file = new File(classLoader.getResource("test.html").getFile());
+        return "file:///"+file.getAbsolutePath().toString();
+    }
 
 }
