@@ -1,4 +1,4 @@
-package session3;
+package session4;
 
 import com.google.common.io.Files;
 import org.openqa.selenium.*;
@@ -20,7 +20,7 @@ public class Listener extends AbstractWebDriverEventListener {
 //    public void afterFindBy(By by, WebElement element, WebDriver driver) {
 //        System.out.println("["+ by + "] has been found");
 //    }
-//
+
     @Override
     public void onException(Throwable throwable, WebDriver driver) {
         System.out.println("[Shit Happened:] "+throwable.getMessage().split(":")[0]);

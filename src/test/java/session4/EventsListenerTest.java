@@ -1,4 +1,4 @@
-package session3;
+package session4;
 
 import org.junit.After;
 import org.junit.Before;
@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -23,6 +24,8 @@ public class EventsListenerTest extends TestBase {
 
     @Before
     public void start() {
+//        ChromeOptions opt = new ChromeOptions();
+//        opt.setHeadless(true);
         edr = new EventFiringWebDriver(new ChromeDriver());
         edr.register(new Listener());
 
