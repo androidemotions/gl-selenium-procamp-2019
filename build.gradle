@@ -16,10 +16,12 @@ dependencies {
     compile 'org.seleniumhq.selenium:selenium-java:3.141.59'
     compile("io.github.bonigarcia:webdrivermanager:3.3.0")
 
-   compile('net.lightbody.bmp:browsermob-core:2.1.5')
+    compile('net.lightbody.bmp:browsermob-core:2.1.5')
             { exclude module: 'selenium' }
 
-}
+    compile 'com.codeborne:selenide:5.1.0'
+    compile 'io.cucumber:cucumber-java:4.2.5'
+ }
 
 test {
     maxParallelForks = 4
